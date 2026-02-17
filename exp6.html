@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML L5</title>
+    <style>
+          body{
+             background-color:rgb(184, 116, 7);
+             height:50px;
+             width:500px;
+             
+          }
+          div{
+            font-size: larger;
+            font-weight: 1000;
+            color:rgb(9, 2, 39);
+            text-align:center;
+          }
+          input{
+            color:chocolate;
+            text-align:center;
+          }
+          ::placeholder{
+            color:rgb(221, 105, 10);
+            text-align:center;
+          }
+          button{
+            color:rgb(91, 26, 79);
+            text-align:center;
+          }
+          form{
+            background-color: blue;
+            color:darkmagenta;
+          }
+
+    </style>
+</head>
+<body>
+    <center>
+    <form action="/server">
+        <div>
+              <label for="enter username"> Username :</label>  
+              <input type="text"
+               placeholder="enter username"
+                id="username"
+                name="username"
+                />
+        </div>
+        <div>
+             <label for="password"> Password : </label>
+             <input type="password"  placeholder="enter username" id="password"/>
+        </div>
+        <div>
+            <label for="age"> Enter Age:</label>
+            <input type="number" placeholder="age" id="age">
+        </div>
+        <button>Submit</button>
+     </form> 
+     <hr>
+     <form action="https://www.youtube.com/results">
+     <input type="text" placeholder="search me" name="search_query"/>
+     <button>search</button>
+     </form>
+     </center> 
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        body{
+            background-color: rgba(255, 242, 0, 0.878);
+        }
+        *{
+            font-family:"Courier New"
+        }
+        h3 ,h1{
+            color:rgb(208, 13, 13);
+
+        }
+        #login{
+            background-color: rgb(20, 219, 57);
+        }
+        #singnup{
+            background-color: rgb(53, 3, 178);
+            color: white;
+        }
+        .upvote{
+            background-color: green;
+            color: antiquewhite;
+        }
+        p a{
+            color:rgb(13, 13, 13) ;
+            background-color: yellow;
+        }
+        nav  a{
+            color:rgb(174, 20, 46);
+        }
+        p + h3{
+            text-decoration:underline;
+        }
+        .upvote + button{
+            color:blue;
+        } 
+        div >  input{
+            background-color: #ffe223;
+        }
+        input[type="username"]{
+            color: rgb(231, 7, 7);
+
+        }
+        input[type="password"]{
+            color:chartreuse;
+        }
+        button:hover{
+            background-color:black;
+            color:white
+        }
+        h3:hover{
+            text-decoration: overline;
+        }
+        button:active{
+            background-color: hotpink;
+        }
+        p:active {
+            font-weight:bold;
+            color:green;
+
+        } 
+        input[type="radio"]:checked + label{
+            color:red;
+            font-weight:blue;
+        }
+        .post:nth-of-type(2n) {
+            background-color: chocolate;
+
+        }
+         h1::first-letter {
+            color:rgb(33, 35, 33);
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+
+<header>
+    <h1> Quaera
+        <button id="login">Log in</button>
+        <button id="singnup">Sign up</button>
+
+    </h1>
+    <div>
+        <input type="username" placeholder="username">
+        <input type="password" placeholder="password">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="following">Following</a></li>
+            <li><a href="answer">Answer</a></li>
+            <li><a href="/spaces">spaces</a></li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+<main>
+    <p>
+        Adam &nbsp;&nbsp;
+        <a class="follow" href="/adam">Follow /adam</a>
+
+    </p>
+    <h3>
+        What is the salbus for Jee 2026?
+    </h3>
+    <span>
+        <button class="upvote">+upvote</button>
+        <button>answer</button>
+    </span>
+    <hr/>
+
+    <p>
+        Catayn  &nbsp;&nbsp; &nbsp;&nbsp;
+         <a class="follow" href="/catlyn">Follow /catlyn</a>
+         
+    </p>
+    <h3>What is the sky blue?</h3>
+    <span>
+        <button class="upvote">+upvote</button>
+        <button>answer</button>
+    </span>
+    <hr/>
+    <p>
+        This is the end of my website more about us on<a href="google.com">google</a>
+    </p> 
+    <div>
+        <input type="radio" id="yes" name="aagree">
+        <label for="yes">Yes</label>
+        <input type="radio" id="No" name="aagree">
+        <label for="No">No</label>
+        
+    </div>
+</main>
+</body>
+</html>
